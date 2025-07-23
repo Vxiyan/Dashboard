@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gamer Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <!-- Sidebar for quick links -->
+        <div class="sidebar">
+            <h2>Gamer Links</h2>
+            <ul>
+                <li><a href="https://www.twitch.tv" target="_blank">Twitch</a></li>
+                <li><a href="https://www.reddit.com/r/gaming/" target="_blank">Reddit Gaming</a></li>
+                <li><a href="https://www.gamesradar.com" target="_blank">GamesRadar</a></li>
+                <li><a href="https://www.youtube.com" target="_blank">YouTube</a></li>
+            </ul>
+        </div>
+
+        <!-- Main Dashboard content -->
+        <div class="main-content">
+            <h1>Welcome to Your Gamer Dashboard!</h1>
+
+            <!-- Notepad Section -->
+            <div class="notepad">
+                <h3>Notepad</h3>
+                <textarea id="notepad" placeholder="Write your notes here..."></textarea>
+                <button id="downloadBtn">Download Notes</button>
+            </div>
+
+            <!-- Performance Meters Section -->
+            <div class="performance">
+                <h3>Browser Performance</h3>
+                <div class="meter-container">
+                    <div class="meter">
+                        <label for="cpuMeter">CPU Load: </label>
+                        <progress id="cpuMeter" max="100" value="0"></progress>
+                    </div>
+                    <div class="meter">
+                        <label for="memoryMeter">Memory Load: </label>
+                        <progress id="memoryMeter" max="100" value="0"></progress>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="dashboard.js"></script>
+</body>
+</html>
