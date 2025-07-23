@@ -4,12 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Page</title>
-    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
         <div class="login-box">
-            <h2>Log-In</h2>
+            <!-- Lighter background behind the text -->
+            <div class="login-title">
+                <h2>Log-In</h2>
+            </div>
             <form id="loginForm" onsubmit="return validateLogin()">
                 <div class="textbox">
                     <input type="text" id="username" placeholder="Username" required>
@@ -25,28 +28,6 @@
         </div>
     </div>
 
-    <script>
-        // Set the correct username and password here
-        const correctUsername = "Vxiyan";
-        const correctPassword = "Daniel_12@"; // Replace with your desired password
-
-        // Validation function
-        function validateLogin() {
-            // Get the values from the input fields
-            const username = document.getElementById("username").value;
-            const password = document.getElementById("password").value;
-            
-            // Check if the credentials match
-            if (username === correctUsername && password === correctPassword) {
-                // If credentials are correct, redirect to dashboard
-                window.location.href = "dashboard.html";
-                return false; // Prevent form from submitting
-            } else {
-                // If credentials are incorrect, display error message
-                document.getElementById("error-message").style.display = "block";
-                return false; // Prevent form from submitting
-            }
-        }
-    </script>
+    <script src="login.js"></script>
 </body>
 </html>
