@@ -106,3 +106,29 @@ progress {
     height: 20px;
     border-radius: 5px;
 }
+.search-container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .search-container input[type="text"] {
+            width: 300px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 16px;
+            margin-right: 10px;
+        }
+        .search-container button {
+            padding: 10px 15px;
+            background-color: #4285F4; /* Google Blue */
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .search-container button:hover {
+            background-color: #357ae8;
+        }
