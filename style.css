@@ -78,7 +78,7 @@ textarea {
 
 button {
     display: block;
-    background-color: #4CAF50;
+    background-color: #AA00FF;
     color: #fff;
     padding: 10px 20px;
     border: none;
@@ -88,7 +88,7 @@ button {
 }
 
 button:hover {
-    background-color: #45a049;
+    background-color: #AA00FF;
 }
 
 /* Performance Meters */
@@ -115,14 +115,14 @@ progress {
         .search-container input[type="text"] {
             width: 300px;
             padding: 10px;
-            border: 1px solid #ddd;
+            border: 1px solid #444;
             border-radius: 4px;
             font-size: 16px;
             margin-right: 10px;
         }
         .search-container button {
             padding: 10px 15px;
-            background-color: #4285F4; /* Google Blue */
+            background-color: #AA00FF; /* Electric Violet */
             color: white;
             border: none;
             border-radius: 4px;
@@ -130,5 +130,5 @@ progress {
             cursor: pointer;
         }
         .search-container button:hover {
-            background-color: #357ae8;
+            background-color: #690099;
         }
