@@ -35,16 +35,12 @@
             </div>
 
             <!-- Performance Meters Section -->
-            <div class="performance">
-                <h3>Browser Performance</h3>
-                <div class="meter-container">
-                    <div class="meter">
-                        <label for="cpuMeter">CPU Load: </label>
-                        <progress id="cpuMeter" max="100" value="0"></progress>
-                    </div>
-                    <div class="meter">
-                        <label for="memoryMeter">Memory Load: </label>
-                        <progress id="memoryMeter" max="100" value="0"></progress>
+            <div class="search-container">
+                <h3>Search</h3>
+                <form class="search-form" action="https://www.google.com/search" method="get" target="_blank">
+                    <input class="search-bar" type="text" name="q" placeholder="Search Google..."></input>
+                    <button class="search-button" type="submit">Search</button>
+                </form>
                     </div>
                 </div>
             </div>
