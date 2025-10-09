@@ -4,7 +4,13 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+    @font-face {
+        font-family: 'Jetbrains'; /* Choose a descriptive name for your font */
+        src: url('PLACEHOLDER.ttf') format('truetype');
+        font-weight: normal; /* Define font-weight if applicable (e.g., bold, light) */
+        font-style: normal;  /* Define font-style if applicable (e.g., italic) */
+        font-display: swap;  /* Optional: Controls how font is displayed while loading */
+    }
 body {
     font-family: Arial, sans-serif;
     background-color: #2d2d2d;
