@@ -35,6 +35,7 @@ body {
     width: 300px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     position: relative;
+    font-family:Jetbrains, sans-serif;
 }
 
 .login-title {
@@ -60,12 +61,14 @@ body {
     background-color: #5a5a5a; /* Lighter grey for the input box */
     color: #fff;
     font-size: 16px;
+    font-family:Jetbrains, sans-serif;
 }
 
 .textbox input:focus {
     outline: none;
-    border-color: #4CAF50;
+    border-color: #ab00ff;
     background-color: #636363;
+    border-width: 2px;
 }
 
 .button input {
@@ -73,10 +76,11 @@ body {
     padding: 12px;
     border-radius: 25px;
     border: none;
-    background-color: #4CAF50;
+    background-color: #ab00ff;
     color: #fff;
     font-size: 18px;
     cursor: pointer;
+    font-family:Jetbrains, sans-serif;
 }
 
 .button input:hover {
