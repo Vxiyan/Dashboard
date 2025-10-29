@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en"><head>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
@@ -8,7 +9,6 @@
 </head>
 <body>
     <div class="dashboard-container">
-        <!-- Sidebar for quick links -->
         <div class="sidebar">
             <h2>Links</h2>
             <ul>
@@ -22,34 +22,49 @@
             </ul>
         </div>
 
-        <!-- Main Dashboard content -->
         <div class="main-content">
             <h1>Welcome to Your Dashboard!</h1>
 
-            <!-- Notepad Section -->
-            <div class="notepad">
+            <div class="task-manager">
+                <h3>Task Manager</h3>
+                <div class="task-input-container">
+                    <input type="text" id="newTaskText" placeholder="Task description..." required>
+                    <select id="newTaskPriority">
+                        <option value="Low">Low Priority</option>
+                        <option value="Medium">Medium Priority</option>
+                        <option value="High">High Priority</option>
+                    </select>
+                    <button id="addTaskBtn">Add Task</button>
+                </div>
+                <ul id="taskList" class="task-list">
+                    <li class="task-item">
+                        <span class="task-text">Example Task</span>
+                        <span class="task-priority High">High</span>
+                        <select class="task-status">
+                            <option value="Not Started">Not Started</option>
+                            <option value="W.I.P.">W.I.P.</option>
+                            <option value="Completed">Completed</option>
+                        </select>
+                        <button class="delete-task-btn">Delete</button>
+                    </li>
+                </ul>
+            </div>
+            
+            <hr> <div class="notepad">
                 <h3>Notepad</h3>
                 <textarea id="notepad" placeholder="Write your notes here..."></textarea>
                 <button id="downloadBtn" style="font-family:Jetbrains, sans-serif;">Download Notes</button>
             </div>
 
-            <!-- Performance Meters Section -->
             <div style="background-color:#444;" class="search-container">
                 <h3>Search</h3>
                 <form class="search-form" action="https://www.google.com/search" method="get" target="_blank">
                     <input class="search-bar" type="text" name="q" placeholder="Search Google..." style="background-color:#333; color:white; font-family:Jetbrains, sans-serif;">
                     <button style="font-family:Jetbrains, sans-serif;" class="search-button" type="submit">Search</button>
                 </form>
-                    </div>
-                </div>
             </div>
-        
-    
-
-    <script src="dashboard.js"></script>
-
-
-</body></html>
+        </div>
+    </div>
 
     <script src="dashboard.js"></script>
 </body>
