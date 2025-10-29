@@ -14,7 +14,7 @@
 /* REVERSED: Main background is light grey, text is dark grey/black */
 body {
     font-family: Jetbrains, sans-serif;
-    background-color: #f0f0f0; /* Light Grey Background */
+    background-color: #000000; /* Light Grey Background */
     color: #333; /* Dark Grey Text */
     padding-top: 20px;
     padding-right: 30px;
