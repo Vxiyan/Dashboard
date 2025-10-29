@@ -139,6 +139,116 @@ progress {
             font-size: 16px;
             cursor: pointer;
         }
+/* --- Task Manager Styles --- */
+
+.task-manager {
+    background-color: #333;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.task-input-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.task-input-container input[type="text"],
+.task-input-container select,
+.task-input-container button {
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    font-family: 'Jetbrains', sans-serif; /* Assuming you use this font */
+}
+
+.task-input-container input[type="text"] {
+    flex-grow: 1;
+    background-color: #444;
+    color: white;
+}
+
+.task-list {
+    list-style: none;
+    padding: 0;
+}
+
+.task-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 8px;
+    border-radius: 4px;
+    background-color: #444;
+    color: white;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.task-text {
+    flex-grow: 1;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.task-priority {
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-size: 0.8em;
+    font-weight: 600;
+    margin-right: 10px;
+}
+
+/* Priority Colors */
+.task-priority.Low {
+    background-color: #28a745; /* Green */
+}
+.task-priority.Medium {
+    background-color: #ffc107; /* Yellow */
+    color: #333;
+}
+.task-priority.High {
+    background-color: #dc3545; /* Red */
+}
+
+.task-status {
+    padding: 5px;
+    margin-right: 10px;
+    background-color: #555;
+    color: white;
+    border: 1px solid #666;
+    border-radius: 4px;
+    font-family: 'Jetbrains', sans-serif;
+}
+
+.delete-task-btn {
+    background-color: #6c757d; /* Gray */
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'Jetbrains', sans-serif;
+}
+
+/* Status Styling (e.g., strike-through for completed) */
+.task-item.completed .task-text,
+.task-item.completed .task-priority {
+    text-decoration: line-through;
+    opacity: 0.6;
+}
+
+.task-item.not-started {
+    border-left: 5px solid #007bff; /* Blue */
+}
+
+.task-item.wip {
+    border-left: 5px solid #ffc107; /* Yellow/Orange */
+}
+
+.task-item.completed {
+    border-left: 5px solid #28a745; /* Green */
+}
         .search-container button:hover {
             background-color: #690099;
         }
