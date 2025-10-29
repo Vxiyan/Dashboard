@@ -5,16 +5,17 @@
     box-sizing: border-box;
 }
 @font-face {
-        font-family: 'Jetbrains'; /* Choose a descriptive name for your font */
-        src: url('JetbrainsMono-Regular.ttf') format('truetype');
-        font-weight: normal; /* Define font-weight if applicable (e.g., bold, light) */
-        font-style: normal;  /* Define font-style if applicable (e.g., italic) */
-        font-display: swap;  /* Optional: Controls how font is displayed while loading */
-    }
+    font-family: 'Jetbrains'; /* Choose a descriptive name for your font */
+    src: url('JetbrainsMono-Regular.ttf') format('truetype');
+    font-weight: normal; /* Define font-weight if applicable (e.g., bold, light) */
+    font-style: normal;  /* Define font-style if applicable (e.g., italic) */
+    font-display: swap;  /* Optional: Controls how font is displayed while loading */
+}
+/* REVERSED: Main background is light grey, text is dark grey/black */
 body {
     font-family: Jetbrains, sans-serif;
-    background-color: #1e1e1e;
-    color: #f0f0f0;
+    background-color: #f0f0f0; /* Light Grey Background */
+    color: #333; /* Dark Grey Text */
     padding-top: 20px;
     padding-right: 30px;
     padding-bottom: 20px;
@@ -29,15 +30,16 @@ body {
 
 /* Sidebar styling */
 .sidebar {
-    background-color: #333;
+    /* REVERSED: Sidebar background is black */
+    background-color: #1e1e1e; /* Black/Very Dark Grey */
     width: 250px;
     padding: 20px;
     text-align: center;
 }
 
 .sidebar h2 {
+    color: #fff; /* White Headers */
     margin-bottom: 20px;
-    color: #fff;
 }
 
 .sidebar ul {
@@ -49,7 +51,7 @@ body {
 }
 
 .sidebar ul li a {
-    color: #bbb;
+    color: #bbb; /* Light link text on dark background */
     text-decoration: none;
 }
 
@@ -61,8 +63,9 @@ body {
 .main-content {
     flex: 1;
     padding: 40px;
-    background-color: #2a2a2a;
-    color: #fff;
+    /* REVERSED: Main content background is black, text is white */
+    background-color: #1e1e1e; /* Black/Very Dark Grey */
+    color: #fff; /* White Text */
 }
 
 h1 {
@@ -70,7 +73,8 @@ h1 {
 }
 
 .notepad {
-    background-color: #444;
+    /* REVERSED: Content block background is dark grey/black */
+    background-color: #2a2a2a;
     padding: 20px;
     border-radius: 10px;
     margin-bottom: 40px;
@@ -79,6 +83,7 @@ h1 {
 textarea {
     width: 100%;
     height: 150px;
+    /* Content block fields are slightly lighter black */
     background-color: #333;
     color: #fff;
     border: none;
@@ -98,10 +103,10 @@ button {
 }
 
 button:hover {
-    background-color: #AA00FF;
+    background-color: #690099; /* Darker hover state for buttons */
 }
 
-/* Performance Meters */
+/* Performance Meters - (Kept for completeness, though they should be removed from HTML/JS) */
 .performance .meter-container {
     display: flex;
     flex-direction: column;
@@ -116,33 +121,43 @@ progress {
     height: 20px;
     border-radius: 5px;
 }
+
 .search-container {
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-        }
-        .search-container input[type="text"] {
-            width: 300px;
-            padding: 10px;
-            border: 1px solid #444;
-            border-radius: 4px;
-            font-size: 16px;
-            margin-right: 10px;
-        }
-        .search-container button {
-            padding: 10px 15px;
-            background-color: #AA00FF; /* Electric Violet */
-            color: white;
-            border: none;
-            border-radius: 4px;
-            font-size: 16px;
-            cursor: pointer;
-        }
+    /* REVERSED: Search container background is dark grey/black */
+    background-color: #2a2a2a; 
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); /* Darker shadow for dark mode */
+}
+.search-container input[type="text"] {
+    width: 300px;
+    padding: 10px;
+    /* REVERSED: Input background is dark, text is white */
+    background-color: #333;
+    color: white; 
+    border: 1px solid #444;
+    border-radius: 4px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+.search-container button {
+    padding: 10px 15px;
+    background-color: #AA00FF; /* Electric Violet */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.search-container button:hover {
+    background-color: #690099;
+}
+
 /* --- Task Manager Styles --- */
 
 .task-manager {
-    background-color: #333;
+    /* REVERSED: Task Manager block background is dark grey/black */
+    background-color: #2a2a2a; 
     padding: 15px;
     border-radius: 8px;
     margin-bottom: 20px;
@@ -160,12 +175,13 @@ progress {
     padding: 8px;
     border: none;
     border-radius: 4px;
-    font-family: 'Jetbrains', sans-serif; /* Assuming you use this font */
+    font-family: 'Jetbrains', sans-serif;
 }
 
 .task-input-container input[type="text"] {
     flex-grow: 1;
-    background-color: #444;
+    /* REVERSED: Input background is dark, text is white */
+    background-color: #333; 
     color: white;
 }
 
@@ -180,7 +196,8 @@ progress {
     padding: 10px;
     margin-bottom: 8px;
     border-radius: 4px;
-    background-color: #444;
+    /* REVERSED: Task item background is dark grey/black */
+    background-color: #333; 
     color: white;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
 }
@@ -199,7 +216,7 @@ progress {
     margin-right: 10px;
 }
 
-/* Priority Colors */
+/* Priority Colors (These keep their distinct colors) */
 .task-priority.Low {
     background-color: #28a745; /* Green */
 }
@@ -214,9 +231,10 @@ progress {
 .task-status {
     padding: 5px;
     margin-right: 10px;
-    background-color: #555;
+    /* REVERSED: Status dropdown background is dark grey/black */
+    background-color: #444; 
     color: white;
-    border: 1px solid #666;
+    border: 1px solid #555;
     border-radius: 4px;
     font-family: 'Jetbrains', sans-serif;
 }
@@ -231,7 +249,7 @@ progress {
     font-family: 'Jetbrains', sans-serif;
 }
 
-/* Status Styling (e.g., strike-through for completed) */
+/* Status Styling */
 .task-item.completed .task-text,
 .task-item.completed .task-priority {
     text-decoration: line-through;
@@ -249,6 +267,3 @@ progress {
 .task-item.completed {
     border-left: 5px solid #28a745; /* Green */
 }
-        .search-container button:hover {
-            background-color: #690099;
-        }
