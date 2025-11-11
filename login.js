@@ -1,6 +1,5 @@
 // Store multiple users and their passwords
 const users = {
-    "Vxiyan": "Daniel_12@",
     "Generic": "Generic"
 };
 
